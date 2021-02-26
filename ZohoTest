@@ -1,0 +1,20 @@
+public class ZohoTest {
+	
+	public static void main(String[] args) {
+		String str = "W E L C O M E";
+		char[] a = str.toCharArray();
+		int len = a.length;		
+		//System.out.println(len);
+					
+		int middleL = (len / 2);
+		//System.out.println(str.charAt(middleL));
+				
+		for (int i = len-1; i > 0; i--) {
+			for (int j = 0; j < i; j++) {
+				System.out.print(" ");
+			}
+			System.out.println(str.charAt(i));
+		}
+									
+	}
+}
